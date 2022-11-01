@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import uuid from "react-uuid";
-import { useSelector, useDispatch } from "react-redux";
-import {Redirect, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch  } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { addTask } from "../redux/tasks";
-import history from "../history";
+// import history from "../history";
+
 
 export default function Addhabit(){
+
+    // const history = useHistory();
+   
+
+
     const [week, setWeek] = useState({
         week : ""
     });
 
-    const navigate = useNavigate
+    const navigate = useNavigate()
     const dispatch = useDispatch()
 
     const [habit, setHabit] = useState({
@@ -27,16 +33,17 @@ console.log(habit)
         
        
         // const input = { name, time, id: newId, status: 'P' }
-         dispatch(addTask({
+        const data = {
             id: uuid(),
             habitName: habit.habitName,
             week: week.week,
             time : time,
             status: 'task-status'
-        }))
-    // Redirect('/')
-        // navigate('/') 
-        history.push('/')
+        }
+         dispatch(addTask(data))
+    //  redirect('/')
+        navigate('/') 
+        // history.push('/') 
     }
 
     function onChange (e){

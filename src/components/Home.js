@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector , useDispatch } from "react-redux";
 import { changeStatus , deleteTask } from "../redux/tasks";
 
 export default function Home(){
+
+
+
     const  dispatch = useDispatch()
     const tasks= useSelector(state=> state.tasks)
     console.log(tasks)

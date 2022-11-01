@@ -1,9 +1,29 @@
 export function addTask(data) {
     return {
-        type: "ADD_TASK",
-        payload: data
-    }
+            type: "ADD_TASK",
+            payload: data
+        }
 }
+
+// export function addTask(data , history) {
+//     return (dispatch)=> {
+//         dispatch({
+//             type: "ADD_TASK",
+//             payload: data
+//         }).then((res)=> history.push('/'))
+//     }
+// }
+
+
+// return (dispatch) => {
+//     dispatch({
+//         type: ACTION_TYPE,
+//         data,
+//     }).then((response) => {
+//         dispatch(push('/my_url'));
+//     });
+// };
+// function actionName(data, history) { history.push('/dashboard') }
 export function changeStatus(status,id) {
     return {
         type: "CHANGE_STATUS",
