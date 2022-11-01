@@ -13,21 +13,20 @@ import {
 } from "date-fns";
 // import uuid from "react-uuid";
 
-const Calendar = ({ showDetailsHandle ,stateWeek ,stateStatus }) => {
+const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
   // const dayFromState = useSelector(state=> state.tasks)
  
   // const dayStatusFromState = useSelector(state=> state.status)
   console.log(stateWeek)
   console.log(stateStatus);
   let habitWeek ;
-    if(stateWeek === 'mon') 
-     habitWeek = 1; 
+    if(stateWeek === 'mon')  habitWeek = 1 ; 
     if(stateWeek === 'tue')  habitWeek = 2 ;
-    if(stateWeek === 'wed')  habitWeek =  3 ;
-    if(stateWeek === 'thu')  habitWeek =  4 ;
-    if(stateWeek === 'fri')  habitWeek =  5 ;
-    if(stateWeek === 'sat')  habitWeek =  6 ;
-    if(stateWeek === 'sun')  habitWeek = 7 ;
+    if(stateWeek === 'wed')  habitWeek = 3 ;
+    if(stateWeek === 'thu')  habitWeek = 4 ;
+    if(stateWeek === 'fri')  habitWeek = 5 ;
+    if(stateWeek === 'sat')  habitWeek = 6 ;
+    if(stateWeek === 'sun')  habitWeek = 0 ;
 
     console.log(habitWeek)
   // if(stateWeek.mon){
@@ -100,6 +99,9 @@ const Calendar = ({ showDetailsHandle ,stateWeek ,stateStatus }) => {
     return (
       <div className="header row flex-middle">
         <div className="col col-start">
+          <div className="icon">
+            <h2>{habitName}</h2>
+          </div>
           {/* <div className="icon" onClick={() => changeMonthHandle("prev")}>
             prev month
           </div> */}
@@ -182,7 +184,7 @@ const Calendar = ({ showDetailsHandle ,stateWeek ,stateStatus }) => {
             prev week
           </div>
         </div>
-        <div>current week: {currentWeek}</div>
+        {/* <div>current week: {currentWeek}</div> */}
         <div className="col col-end" onClick={() => changeWeekHandle("next")}>
           <div className="icon">next week</div>
         </div>
