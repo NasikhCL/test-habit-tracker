@@ -30,6 +30,7 @@ h2{
   width: 100%;
   height: 100vh;
   background:linear-gradient(#EFF54D 0% , #00AC61 50%);
+  overflow-y: scroll;
  
 }
 
