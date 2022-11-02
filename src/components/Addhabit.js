@@ -20,7 +20,7 @@ export default function Addhabit(){
     const dispatch = useDispatch()
 
     const [habit, setHabit] = useState({
-        habitName: ''
+        habitName: null
 
 });
     const [time , setTime] = useState('')
@@ -30,6 +30,10 @@ export default function Addhabit(){
 console.log(habit)
  const onSubmit = (e) => {
         e.preventDefault();
+        if (!habit.name){
+            navigate('/') 
+            return;
+        }
         
        
         // const input = { name, time, id: newId, status: 'P' }
