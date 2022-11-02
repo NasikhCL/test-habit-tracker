@@ -30,7 +30,7 @@ export default function Addhabit(){
 console.log(habit)
  const onSubmit = (e) => {
         e.preventDefault();
-        if (!habit.name){
+        if (!habit.habitName){
             navigate('/') 
             return;
         }
