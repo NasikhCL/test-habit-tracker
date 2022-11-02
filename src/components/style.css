@@ -350,7 +350,7 @@ cursor:pointer;
 
 @media screen and (max-width:450px) {
   .hint-box{
-    width:200px;
+    width:99%;
   }
   .hint-box-container{
     left:0;
