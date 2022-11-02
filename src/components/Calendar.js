@@ -20,13 +20,13 @@ const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
   console.log(stateWeek)
   console.log(stateStatus);
   let habitWeek ;
-    if(stateWeek === 'mon')  habitWeek = 1 ; 
-    if(stateWeek === 'tue')  habitWeek = 2 ;
-    if(stateWeek === 'wed')  habitWeek = 3 ;
-    if(stateWeek === 'thu')  habitWeek = 4 ;
-    if(stateWeek === 'fri')  habitWeek = 5 ;
-    if(stateWeek === 'sat')  habitWeek = 6 ;
-    if(stateWeek === 'sun')  habitWeek = 0 ;
+    if(stateWeek === 'MON')  habitWeek = 1 ; 
+    if(stateWeek === 'TUE')  habitWeek = 2 ;
+    if(stateWeek === 'WED')  habitWeek = 3 ;
+    if(stateWeek === 'THU')  habitWeek = 4 ;
+    if(stateWeek === 'FRI')  habitWeek = 5 ;
+    if(stateWeek === 'SAT')  habitWeek = 6 ;
+    if(stateWeek === 'SUN')  habitWeek = 0 ;
 
     console.log(habitWeek)
   // if(stateWeek.mon){

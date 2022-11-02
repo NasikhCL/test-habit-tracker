@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 
 
-export default function Cal() {
+export default function CalanderContainer() {
 
   const tasks = useSelector(state=> state.tasks)
   console.log(tasks)
@@ -23,6 +23,7 @@ export default function Cal() {
   
   const habitCalander = tasks.map((task,index) => {
     return(<div key={task.id} className="App1">
+      <div> </div>
               <Calendar showDetailsHandle={showDetailsHandle} habitName={task.habitName} stateWeek={task.week} stateStatus={task.status} />   
           </div>)
   

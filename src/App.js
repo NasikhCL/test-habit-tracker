@@ -9,7 +9,7 @@ import Addhabit from './components/Addhabit';
 export default function App(){
 
   return(
-    <div>
+    <div className='app'>
       <Navbar /> 
       <Navigator />
       <Routes>

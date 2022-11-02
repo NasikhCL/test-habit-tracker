@@ -1,17 +1,22 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    /* background:linear-gradient(#EFF54D 0% , #00AC61 50%); */
+}
+a{
+  color: transparent;
 }
 h2{
     margin: 0;
 }
 
 /* navbar */
-.navbar{
+.navbar{  
+    text-shadow: #242B2E;
     width: 100%;
     height: 60px;
-    background-color: aqua;
-    color: rgb(85, 87, 88);
+    /* background-color:  */
+    color: #CAD5E2;
     
 }
 
@@ -23,37 +28,46 @@ h2{
 
 .app{
   width: 100%;
+  height: 100vh;
+  background:linear-gradient(#EFF54D 0% , #00AC61 50%);
+ 
 }
 
 /* navigator component */
 .navigator{
     width:100%;
-    height:30px;
+    height:40px;
     display: flex;
     flex-wrap: wrap;
-    background-color:lightcoral;
+    background-color: #5737D6;
     justify-content: center;
+    align-items: center;
+    font-weight: bold;
 
 }
 .navigator-route{
     width: 50vw;
-    height: 100%;
+    height: 100%;border: 4px solid grey;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
-    padding-top: 5px;
+    
+    color:#CAD5E2
 }
-
+.navigator-route:hover{
+  background-color: #5B54FA;
+}
 
 /* home */
 
 .home{
+ 
   width: 100%;
   margin: auto;
   margin-top: 10px;
   /* position: relative; */
-  border: 1px solid blue;
-  height: 80vh;
+  /* border: 1px solid blue; */
+  height: 60vh;
   overflow-y: scroll;
 }
 
@@ -76,25 +90,36 @@ h2{
   margin-bottom: 20px;
   max-width: 320px;
   /* height: 100px; */
-  background-color: azure;
+  background: linear-gradient(#538FFB , #5B54FA);
   padding:0 0 10px 10px;
   box-sizing: border-box;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   position: relative;
+  border-radius: 10px;
+  color: #242B2E;
 
 }
+
+.habit-time-day{
+  margin: 0;
+  max-width:140px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+  flex-wrap: wrap;
+  color:#C7C11A;
+  font-size: 20px;
+  
+}
+
 .habit-day{
   margin: 0px;
-  /* display: inline-block; */
-  color: grey;
-  border: 1px solid greenyellow;
 }
-
 .habit-time{
   margin: 0px;
+  margin-left: 5px;
   display: inline-block;
-  color: grey;
-  border: 1px solid greenyellow;
   margin-right: 20px;
 }
 .delete-btn{

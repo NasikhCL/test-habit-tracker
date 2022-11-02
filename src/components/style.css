@@ -2,7 +2,7 @@
   font-family: sans-serif;
   text-align: center;
   /* min-height: 700px; */
-  background-color: paleturquoise;
+  /* background-color: paleturquoise; */
   margin: 0;
   padding: 20px;
   width: 100%;
@@ -189,32 +189,31 @@ main {
   border-right: 10px solid #696969;
 }
 .calendar .body .completed {
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-image: linear-gradient(45deg, green 0%, rgb(13, 114, 38) 40%);
-  border-image-slice: 1;
+  border-top: 10px solid green;
+  border-bottom: 10px solid green;
+
 }
 .calendar .body .completed-today {
-  border-top: 10px solid rgb(50, 116, 30);
-  border-bottom: 10px solid rgb(59, 124, 28);
+  border-left: 10px solid #696969;
+  border-right: 10px solid #696969;
+  border-top: 10px solid green;
+  border-bottom: 10px solid green;
+  /* border-top: 10px solid rgb(50, 116, 30);
+  border-bottom: 10px solid rgb(59, 124, 28); */
   /* border-left: 10px solid #696969;
   border-right: 10px solid #696969; */
-  background-color: rgba(121, 118, 119, 0.438);
+  /* background-color: rgba(121, 118, 119, 0.438); */
 }
 
 .calendar .body .not-completed {
-  border-top: 10px solid transparent;  
-  border-bottom: 10px solid transparent;
-  border-image: linear-gradient(45deg, red 0%, red 40%);
-  border-image-slice: 1;
+  border-top: 10px solid red;
+  border-bottom: 10px solid red;
 }
 .calendar .body .not-completed-today {
   border-top: 10px solid red;
   border-bottom: 10px solid red;
-  /* border-left: 10px solid #696969;
-  border-right: 10px solid #696969; */
-  /* background: url(); */
-  background-color: #8d8b8b98;
+  border-left: 10px solid #696969;
+  border-right: 10px solid #696969;
 }
 .calendar .body .selected {
   border-left: 10px solid transparent;
@@ -222,9 +221,8 @@ main {
   border-image-slice: 1;
 }
 .calendar .body .today {
-  border-left: 10px solid transparent;
-  border-image: linear-gradient(45deg, #696969 0%, #8ea1a0 40%);
-  border-image-slice: 1;
+  border-left: 10px solid #696969;
+  border-right: 10px solid #696969;
 }
 .calendar .body .row {
   border-bottom: 1px solid var(--border-color);

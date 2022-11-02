@@ -41,7 +41,7 @@ export function deleteTask(id) {
 let task= [{
     id: 1,
     'habitName': 'GYM',
-    'week' : 'tue',
+    'week' : 'TUE',
     'time': '09:30',
     'status': 'not-completed'
 }]

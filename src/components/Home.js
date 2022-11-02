@@ -19,8 +19,10 @@ export default function Home(){
     // console.log(status);
     return (<div className="card" key={item.id}>
                 <h2 className="habit-name">{item.habitName}</h2>
-                <h5 className="habit-day">{item.week}</h5>
-                <h5 className="habit-time">{item.time}</h5>
+                <div className="habit-time-day">
+                    <p className="habit-day">{item.week}</p>
+                    <p className="habit-time">{item.time}</p>
+                </div>
                 <img className="delete-btn" onClick={()=> dispatch(deleteTask(item.id))} src="https://img.icons8.com/pastel-glyph/30/000000/trash.png" alt="delete-btn"/>
                 <select defaultValue={item.status} onChange={handleChange}>
                     <option>task-status</option>

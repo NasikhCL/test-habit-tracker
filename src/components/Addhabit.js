@@ -37,7 +37,7 @@ console.log(habit)
             id: uuid(),
             habitName: habit.habitName,
             week: week.week,
-            time : time,
+            time : time ,
             status: 'task-status'
         }
          dispatch(addTask(data))
@@ -72,36 +72,36 @@ console.log(habit)
                 <div className="select-weeks">
                     <label>
                         Monday:
-                        <input type='radio' name="week" value="mon" checked={week.week === 'mon'} onChange={onChange} />
+                        <input type='radio' name="week" value="MON" checked={week.week === 'MON'} onChange={onChange} />
                     </label>
                     <label>
                         Tuesday:
-                        <input type='radio' name="week" value="tue"  checked={week.week === 'tue'} onChange={onChange} />
+                        <input type='radio' name="week" value="TUE"  checked={week.week === 'TUE'} onChange={onChange} />
                     </label>
                     <label>
                         Wednesday:
-                        <input type='radio' name="week" value="wed" checked={week.week === 'wed'} onChange={onChange} />
+                        <input type='radio' name="week" value="WED" checked={week.week === 'WED'} onChange={onChange} />
                     </label>
 
                     <label>
                         Thursday:
-                        <input type='radio' name="week" value="thu" checked={week.week === 'thu'} onChange={onChange} />
+                        <input type='radio' name="week" value="THU" checked={week.week === 'THU'} onChange={onChange} />
                     </label>
                     <label>
                         Friday:
-                        <input type='radio' name="week" value="fri" checked={week.week === 'fri'} onChange={onChange} />
+                        <input type='radio' name="week" value="FRI" checked={week.week === 'FRI'} onChange={onChange} />
                     </label>
                     <label>
                         Saturday:
-                        <input type='radio' name="week" value="sat" checked={week.week === 'sat'} onChange={onChange} />
+                        <input type='radio' name="week" value="SAT" checked={week.week === 'SAT'} onChange={onChange} />
                     </label>
                     <label>
                         Sunday:
-                        <input type='radio' name="week" value="sun" checked={week.week === 'sun'} onChange={onChange} />
+                        <input type='radio' name="week" value="SUN" checked={week.week === 'SUN'} onChange={onChange} />
                     </label>
                 </div>
                 <div className="set-time">
-                    <input type='time' onChange={(e)=> setTime(e.target.value)}/>
+                    <input type='time' value={time} onChange={(e)=> setTime(e.target.value)}/>
                 </div>
                 <button className="ui button primary" type="submit">Submit</button>
             </form>
