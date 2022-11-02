@@ -278,3 +278,82 @@ main {
   flex-basis: calc(100% / 7);
   width: calc(100% / 7);
 }
+.calander-hint{
+margin-left: 30px;
+transition: all .5s ease-in-out;
+cursor:pointer;
+
+}
+
+.hint-box-container{
+  position: fixed;
+  top:120px;
+  left:60px;
+  width: 300px;
+  /* height:400px; */
+  padding: 30px 0 30px 10px;
+
+  
+  z-index: 1;
+  border:1px solid black; 
+  display: none;
+  background-color: rgba(255, 255, 255, 0.849);
+  box-shadow: 2px 2px 2px grey;
+  font-weight: bold;
+  /* cursor:pointer; */
+
+}
+.calander-hint:hover{
+  color:black;
+
+}
+.calander-hint:hover .hint-box-container{
+  display: block;
+  
+}
+.hint-box{
+  width: 250px;
+  height: 50px;
+  /* border:1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.hint-border-today{
+  /* margin-right:20px ; */
+  width:60px;
+  height:50px;
+  border-left: 10px solid grey;
+  border-right: 10px solid grey;
+}
+.hint-border-pending{
+  width: 60px;
+  height: 50px;
+  border-top: 10px solid orange;
+  border-bottom: 10px solid orange;
+}
+.hint-border-not-complete{
+  width: 60px;
+  height: 50px;
+  border-top: 10px solid red;
+  border-bottom: 10px solid red;
+}
+.hint-border-complete{
+  width: 60px;
+  height: 50px;
+  border-top: 10px solid green;
+  border-bottom: 10px solid green;
+}
+
+@media screen and (max-width:450px) {
+  .hint-box{
+    width:200px;
+  }
+  .hint-box-container{
+    left:0;
+  }
+  
+}

@@ -30,6 +30,31 @@ export default function CalanderContainer() {
   })
   return (
     <div>
+      <div className="calander-hint">
+        <div>calander hint</div>
+        <div className="hint-box-container">
+          <div className="hint-box">
+             <div className="hint-border-today"> </div>
+            
+             <p>today's date</p>
+          </div>
+          <hr/>
+          <div className="pending-hint hint-box">
+             <div className="hint-border-pending"> </div>
+             <p>Habit Pending </p>
+          </div>
+          <hr/>
+          <div className="pending-hint hint-box">
+             <div className="hint-border-not-complete"> </div>
+             <p>Habit Not Complete </p>
+          </div>
+          <hr/>
+          <div className="pending-hint hint-box">
+             <div className="hint-border-complete"> </div>
+             <p>Habit Complete </p>
+          </div>
+        </div>
+      </div>
       {habitCalander}
     </div>
   );

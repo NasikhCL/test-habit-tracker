@@ -15,8 +15,7 @@ h2{
     text-shadow: #242B2E;
     width: 100%;
     height: 60px;
-    /* background-color:  */
-    color: #CAD5E2;
+    color: #203852;
     
 }
 
@@ -48,7 +47,8 @@ h2{
 }
 .navigator-route{
     width: 50vw;
-    height: 100%;border: 4px solid grey;
+    height: 100%;
+    border: 4px solid grey;
     box-sizing: border-box;
     /* border: 1px solid black; */
     text-align: center;
@@ -66,8 +66,6 @@ h2{
   width: 100%;
   margin: auto;
   margin-top: 10px;
-  /* position: relative; */
-  /* border: 1px solid blue; */
   height: 60vh;
   overflow-y: scroll;
 }
@@ -76,16 +74,18 @@ h2{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: aqua;
+  /* background-color: aqua; */
   position: fixed;
   right: 30px;
   bottom: 30px;
-  transition: all .3s ease-in-out;cursor: pointer;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 .add-task-btn:hover{
   transform: scale(1.05);
 
 }
+
 .card{
   margin: auto;
   margin-bottom: 20px;
@@ -134,3 +134,49 @@ h2{
   transform: scale(1.2);
 }
 
+
+.add-task-container{
+  line-height: 30px;
+  color:#5737D6;
+  width:70%;
+  margin: 30px;
+  border: 2px solid grey ;
+  padding: 10px 0 20px 20px;
+  transition: all .3s ease-in-out;
+
+
+}
+
+.add-task-container:hover{
+
+background-color:#eeeeee ;
+}
+.input-habit-name{
+  margin-left:10px;
+}
+
+.select-weeks label{
+  margin-right: 10px;
+}
+.set-time{
+  /* padding-left: 10px; */
+}
+.submit-btn{
+  margin-top:50px;
+  /* margin-left:30px; */
+  background-color: transparent;
+  border: 2px solid #5B54FA;
+  width:100px;
+  transition: all .3s ease-in-out;
+
+}
+.submit-btn:hover{
+  background-color: #5B54FA;
+  color:#CAD5E2
+}
+@media screen and (max-width:450px) {
+  .add-task-container{
+    width:80%
+  }
+  
+}
