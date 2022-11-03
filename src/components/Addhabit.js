@@ -72,13 +72,13 @@ console.log(habit)
             <form className="form" onSubmit={(e) => { onSubmit(e) }}>
                 <div className="field">
                     <label>Habit Name: </label>
-                    <input type="text" className="input-habit-name" value={habit.habitName} placeholder="habit Name" onChange={(e) => { setHabit({habitName : e.target.value}) }} />
+                    <input type="text" className="input-habit-name" value={habit.habitName} placeholder="habit Name" onChange={(e) => { setHabit({habitName : e.target.value}) }} required/>
                 </div>
                 <div className="select-weeks">
                     <label>Select Day:</label>
                     <br/>
                     <label>
-                        <input type='radio' name="week" value="MON" checked={week.week === 'MON'} onChange={onChange} />
+                        <input type='radio' name="week" value="MON" checked={week.week === 'MON'} onChange={onChange} required/>
                         :Monday
                     </label>
                     <label>
@@ -110,7 +110,7 @@ console.log(habit)
                 <div className="set-time">
                 <label>Select TIme:</label>
                     <br/>
-                    <input type='time' className="set-time" value={time} onChange={(e)=> setTime(e.target.value)}/>
+                    <input type='time' className="set-time" value={time} onChange={(e)=> setTime(e.target.value)} required/>
                 </div>
                 <button className="submit-btn" type="submit">Submit</button>
             </form>
