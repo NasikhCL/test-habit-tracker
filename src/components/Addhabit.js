@@ -3,12 +3,13 @@ import uuid from "react-uuid";
 import { useSelector, useDispatch  } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addTask } from "../redux/tasks";
-// import history from "../history";
+
+
+// add habit component where users can add haibt to their list
 
 
 export default function Addhabit(){
 
-    // const history = useHistory();
    
 
 

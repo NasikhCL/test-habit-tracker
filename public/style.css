@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    /* background:linear-gradient(#EFF54D 0% , #00AC61 50%); */
+    
 }
 a{
   color: transparent;
@@ -52,9 +52,7 @@ h2{
     height: 100%;
     border: 4px solid grey;
     box-sizing: border-box;
-    /* border: 1px solid black; */
     text-align: center;
-    
     color:#CAD5E2
 }
 .navigator-route:hover{
@@ -79,7 +77,6 @@ h2{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  /* background-color: aqua; */
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -95,16 +92,15 @@ h2{
   margin: auto;
   margin-bottom: 20px;
   max-width: 320px;
-  /* height: 100px; */
   background: linear-gradient(#538FFB , #5B54FA);
   padding:0 0 10px 10px;
   box-sizing: border-box;
-  /* border: 1px solid yellow; */
   position: relative;
   border-radius: 10px;
   color: #242B2E;
 
 }
+/* add task */
 
 .habit-time-day{
   margin: 0;
@@ -163,12 +159,9 @@ background-color:#eeeeee ;
 .select-weeks label{
   margin-right: 10px;
 }
-.set-time{
-  /* padding-left: 10px; */
-}
+
 .submit-btn{
   margin-top:50px;
-  /* margin-left:30px; */
   background-color: transparent;
   border: 2px solid #5B54FA;
   width:100px;

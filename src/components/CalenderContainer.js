@@ -3,7 +3,7 @@ import { useState } from "react";
 import Calendar from "./Calendar";
 import { useSelector } from "react-redux";
 
-
+// calander component wraped with the habit of the user and status of the habit 
 
 export default function CalanderContainer() {
 

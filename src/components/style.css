@@ -1,8 +1,8 @@
+
+/* calander page style */
 .App1 {
   font-family: sans-serif;
   text-align: center;
-  /* min-height: 700px; */
-  /* background-color: paleturquoise; */
   margin: 0;
   padding: 20px;
   width: 100%;
@@ -139,7 +139,6 @@ main {
 }
 
 .calendar .header .icon:hover {
-  /*transform: scale(1.75);*/
   transition: 0.25s ease-out;
   color: var(--main-color);
 }
@@ -179,8 +178,6 @@ main {
 .calendar .body .task-status {
   border-top: 10px solid orange;
   border-bottom: 10px solid orange;
-  /* border-image: linear-gradient(45deg, orange 0%, orange(13, 114, 38) 40%); */
-  /* border-image-slice: 1; */
 }
 .calendar .body .task-status-today {
   border-top: 10px solid orange;
@@ -198,11 +195,7 @@ main {
   border-right: 10px solid #696969;
   border-top: 10px solid green;
   border-bottom: 10px solid green;
-  /* border-top: 10px solid rgb(50, 116, 30);
-  border-bottom: 10px solid rgb(59, 124, 28); */
-  /* border-left: 10px solid #696969;
-  border-right: 10px solid #696969; */
-  /* background-color: rgba(121, 118, 119, 0.438); */
+
 }
 
 .calendar .body .not-completed {
@@ -228,9 +221,7 @@ main {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* .calendar .body .row:last-child {
-  border-bottom: none;
-} */
+
 
 .calendar .body .cell:last-child {
   border-right: none;
@@ -290,7 +281,6 @@ cursor:pointer;
   top:120px;
   left:60px;
   width: 300px;
-  /* height:400px; */
   padding: 30px 0 30px 10px;
 
   
@@ -300,7 +290,6 @@ cursor:pointer;
   background-color: rgba(255, 255, 255, 0.849);
   box-shadow: 2px 2px 2px grey;
   font-weight: bold;
-  /* cursor:pointer; */
 
 }
 .calander-hint:hover{
@@ -314,7 +303,6 @@ cursor:pointer;
 .hint-box{
   width: 250px;
   height: 50px;
-  /* border:1px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -323,7 +311,6 @@ cursor:pointer;
 
 }
 .hint-border-today{
-  /* margin-right:20px ; */
   width:60px;
   height:50px;
   border-left: 10px solid grey;

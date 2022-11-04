@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useSelector , useDispatch } from "react-redux";
 import { changeStatus , deleteTask } from "../redux/tasks";
 
+// home screen where users can change the status of the habit which they added , and also they can delete the habit
+
 export default function Home(){
 
 
@@ -40,4 +42,3 @@ export default function Home(){
     )
 }
 
-// {item.week.mon && 'Mon'} {item.week.tue && 'tue'} {item.week.wed && 'wed'} {item.week.thu && 'thu'} {item.week.fri && 'fri'} {item.week.sat && 'sat'} {item.week.sun && 'sun'}

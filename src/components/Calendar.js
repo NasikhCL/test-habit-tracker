@@ -11,14 +11,11 @@ import {
   addWeeks,
   subWeeks
 } from "date-fns";
-// import uuid from "react-uuid";
+
+// calander  component using date-fns package
 
 const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
-  // const dayFromState = useSelector(state=> state.tasks)
- 
-  // const dayStatusFromState = useSelector(state=> state.status)
-  console.log(stateWeek)
-  console.log(stateStatus);
+  
   let habitWeek ;
     if(stateWeek === 'MON')  habitWeek = 1 ; 
     if(stateWeek === 'TUE')  habitWeek = 2 ;
@@ -28,38 +25,6 @@ const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
     if(stateWeek === 'SAT')  habitWeek = 6 ;
     if(stateWeek === 'SUN')  habitWeek = 0 ;
 
-    console.log(habitWeek)
-  // if(stateWeek.mon){
-  //  habitWeek.push(1)
-  // }
-  // if(stateWeek.tue){
-  //   habitWeek.push(2)
-  //  }
-  //  if(stateWeek.wed){
-  //   habitWeek.push(3)
-  //  }
-  //  if(stateWeek.thu){
-  //   habitWeek.push(4)
-  //  }
-  //  if(stateWeek .fri){
-  //   habitWeek.push(5)
-  //  }
-  //  if(stateWeek .sat){
-  //   habitWeek.push(6)
-  //  }
-  //  if(stateWeek .sun){
-  //   habitWeek.push(7)
-  //  }
-   
-  // console.log(habitWeek)
-  // const weekArray = [ ...stateWeek ]
-  // const weekData = weekArray.map(item=> {
-  //   if(item.mon){
-  //   return 1;
-  //   }else if(item.tue){
-  //     return 2;
-  //   }
-  // })
 
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [currentWeek, setCurrentWeek] = useState(getWeek(currentMonth));
@@ -75,14 +40,14 @@ const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
   };
 
   const changeWeekHandle = (btnType) => {
-    //console.log("current week", currentWeek);
+
     if (btnType === "prev") {
-      //console.log(subWeeks(currentMonth, 1));
+
       setCurrentMonth(subWeeks(currentMonth, 1));
       setCurrentWeek(getWeek(subWeeks(currentMonth, 1)));
     }
     if (btnType === "next") {
-      //console.log(addWeeks(currentMonth, 1));
+ 
       setCurrentMonth(addWeeks(currentMonth, 1));
       setCurrentWeek(getWeek(addWeeks(currentMonth, 1)));
     }
@@ -95,22 +60,17 @@ const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
 
   const renderHeader = () => {
     const dateFormat = "MMM yyyy";
-    // console.log("selected day", selectedDate);
+  
     return (
       <div className="header row flex-middle">
         <div className="col col-start">
           <div className="icon">
             <h2>{habitName}</h2>
           </div>
-          {/* <div className="icon" onClick={() => changeMonthHandle("prev")}>
-            prev month
-          </div> */}
+         
         </div>
         <div className="col col-center">
           <span>{format(currentMonth, dateFormat)}</span>
-        </div>
-        <div className="col col-end">
-          {/* <div className="icon" onClick={() => changeMonthHandle("next")}>next month</div> */}
         </div>
       </div>
     );
@@ -184,7 +144,6 @@ const Calendar = ({ showDetailsHandle ,habitName ,stateWeek ,stateStatus }) => {
             prev week
           </div>
         </div>
-        {/* <div>current week: {currentWeek}</div> */}
         <div className="col col-end" onClick={() => changeWeekHandle("next")}>
           <div className="icon">next week</div>
         </div>
